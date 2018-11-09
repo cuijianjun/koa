@@ -12,7 +12,7 @@ module.exports = merge(baseWebpackConfig, {
         NODE_ENV: JSON.stringify('development')
       }
     }),
-  ]
+  ]validator
 })
 
 
