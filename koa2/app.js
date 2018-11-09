@@ -20,6 +20,8 @@ const server = async ( ctx, next ) => {
   } else if ( ctx.method === 'POST' ) {
     if ( ctx.url === '/postData.json' ) {
       result.data = 'ok'
+    } else {
+      result.success = false
     }
     ctx.body = result
     next && next()
